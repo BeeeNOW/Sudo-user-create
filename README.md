@@ -31,7 +31,7 @@
 三、 生成 SSH KEY  
   ssh-keygen
 
-  ssh-keygen -f ~/.ssh/deploy_key_repo1
+  ssh-keygen -f ~/.ssh/key的名稱
 
              -f  文件名稱  
 生成 SSH KEY：  ssh-keygen -t rsa -C  "*****@gmail.com"
