@@ -53,7 +53,9 @@
 eval "$(ssh-agent -s)"
 
 ssh-add -K ~/.ssh/鑰匙🔑名稱  
-ssh-add ~/.ssh/鑰匙🔑名稱
+ssh-add ~/.ssh/鑰匙🔑名稱  
+
+`[` 參考連結`]``(` https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/`)`
 
 
 ## 使用步驟
