@@ -52,7 +52,7 @@
 
 eval "$(ssh-agent -s)"
 
-ssh-add -K ~/.ssh/鑰匙🔑名稱
+ssh-add -K ~/.ssh/鑰匙🔑名稱  
 ssh-add ~/.ssh/鑰匙🔑名稱
 
 
