@@ -8,7 +8,8 @@
 新增一個共通使用者：＄ adduser username kingman
 
 
-切換身份到Kingman :  su -l kingman
+切換身份到Kingman :  su -l kingman  
+[參考連結](https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart)
 
 一、 安裝git
 
@@ -46,7 +47,8 @@
 
   git clone  專案的clone
 
-  Clone到本機的專案會自動關聯雲端專案，可以通過  git remote -v  命令查看關聯狀態
+  Clone到本機的專案會自動關聯雲端專案，可以通過  git remote -v  命令查看關聯狀態  
+  [參考連結](https://www.cnblogs.com/woider/p/6533709.html)
 
 ===以下過程是 讓電腦重新找鑰匙🔑===
 
