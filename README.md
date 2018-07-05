@@ -37,12 +37,12 @@
 
              -t創建密鑰的類型       -C“備註“
 
- 四、在git上新增SSH key
+ 四、在git上新增SSH key （有幾個專案就要新增幾個deploy key)
   找到SSH key 的public鑰匙🔑
 
   登入GitHub，打開並新增專案的deploy key
 
-五、clone專案到本機
+五、clone專案到本機 (有幾個專案就要clone幾個）
 
   git clone  專案的clone
 
@@ -54,4 +54,15 @@ eval "$(ssh-agent -s)"
 
 ssh-add -K ~/.ssh/deploy_key_repo1
 ssh-add ~/.ssh/deploy_key_repo1
+
+
+## 使用步驟
+###### //進到公用帳號
+1. $ su -i kingman 
+###### //前往要pull的專案
+2. $ cd 專案位置   
+###### //pull最新版
+3. $ git pull     
+Already up-to-date.
+
 
