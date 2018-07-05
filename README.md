@@ -10,7 +10,7 @@
 
 切換身份到Kingman :  su -l kingman
 
-一、安裝git
+一、 安裝git
 
   安裝git: apt-get install git
 
@@ -21,13 +21,13 @@
   git config --global user.email "********@gmail.com"
 
 
-二、開啟ＳＳＨ服務
+二、 開啟ＳＳＨ服務
 
   Ubuntu 安装 SSH：apt-get install ssh
 
   查看 SSH狀態：ps -e | grep sshd 
 
-三、生成 SSH KEY
+三、 生成 SSH KEY
   ssh-keygen
 
   ssh-keygen -f ~/.ssh/deploy_key_repo1
@@ -37,12 +37,12 @@
 
              -t創建密鑰的類型       -C“備註“
 
- 四、在git上新增SSH key （有幾個專案就要新增幾個deploy key)
+ 四、 在git上新增SSH key （有幾個專案就要新增幾個deploy key)
   找到SSH key 的public鑰匙🔑
 
   登入GitHub，打開並新增專案的deploy key
 
-五、clone專案到本機 (有幾個專案就要clone幾個）
+五、 clone專案到本機 (有幾個專案就要clone幾個）
 
   git clone  專案的clone
 
