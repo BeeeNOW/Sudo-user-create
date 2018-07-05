@@ -28,7 +28,7 @@
   查看 SSH狀態：ps -e | grep sshd 
 
 三、 生成 SSH KEY
-  ssh-keygen
+   ssh-keygen
 
   ssh-keygen -f ~/.ssh/deploy_key_repo1
 
