@@ -59,6 +59,20 @@ ssh-add ~/.ssh/鑰匙🔑名稱
 
 [參考連結]( https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
+## 六、 多個專案與ssh key切換設定  
+（如果有多個專案與ssh key 配對會有切換問題，所以要有下面設定）  
+###### 以下範例  
+
+到.ssh/新增 config檔  
+`Host 專案名稱.github.com`  
+`HostName github.com`  
+`User git`  
+`IdentityFile /home/kingman/.ssh/私鑰🔑名稱`
+
+到專案config檔修改  
+`[remote "origin"]`  
+`url = git@專案名稱.github.com:BeeeNOW/專案名稱.git`
+
 
 ## 使用步驟
 ###### //進到公用帳號
