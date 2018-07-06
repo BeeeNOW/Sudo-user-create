@@ -68,5 +68,6 @@ ssh-add ~/.ssh/鑰匙🔑名稱
 ###### //pull最新版
 3. $ git pull     
 Already up-to-date.
-
+###### //push
+4. $ git push
 
