@@ -8,33 +8,33 @@
 新增一個共通使用者：＄ adduser username kingman
 
 
-切換身份到Kingman :  su -l kingman  
+切換身份到Kingman : ＄su -l kingman  
 [參考連結](https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart)
 
 ## 一、 安裝git
 
-  安裝git: apt-get install git
+  安裝git:＄apt-get install git
 
-  查看git版本：git version
+  查看git版本：＄git version
 
   設定git用戶：
-  git config --global user.name "woider"
-  git config --global user.email "********@gmail.com"
+  ＄git config --global user.name "woider"
+  ＄git config --global user.email "********@gmail.com"
 
 
 ## 二、 開啟ＳＳＨ服務
 
-  Ubuntu 安装 SSH：apt-get install ssh
+  Ubuntu 安装 SSH：＄apt-get install ssh
 
-  查看 SSH狀態：ps -e | grep sshd 
+  查看 SSH狀態：＄ps -e | grep sshd 
 
 ## 三、 生成 SSH KEY  
-  ssh-keygen
+  ＄ssh-keygen
 
-  ssh-keygen -f ~/.ssh/key的名稱
+  ＄ssh-keygen -f ~/.ssh/key的名稱
 
              -f  文件名稱  
-生成 SSH KEY：  ssh-keygen -t rsa -C  "*****@gmail.com"
+生成 SSH KEY： ＄ssh-keygen -t rsa -C  "*****@gmail.com"
 
              -t創建密鑰的類型       -C“備註“
 
@@ -45,17 +45,16 @@
 
 ## 五、 clone專案到本機 (有幾個專案就要clone幾個）
 
-  git clone  專案的clone
+  ＄git clone  專案的clone
 
-  Clone到本機的專案會自動關聯雲端專案，可以通過  git remote -v  命令查看關聯狀態  
+  Clone到本機的專案會自動關聯雲端專案，可以通過  ＄git remote -v  命令查看關聯狀態  
   [參考連結](https://www.cnblogs.com/woider/p/6533709.html)
 
 ===以下過程是 讓電腦重新找鑰匙🔑===
 
-eval "$(ssh-agent -s)"
+＄eval "$(ssh-agent -s)"
 
-ssh-add -K ~/.ssh/鑰匙🔑名稱  
-ssh-add ~/.ssh/鑰匙🔑名稱  
+＄ssh-add ~/.ssh/鑰匙🔑名稱  
 
 [參考連結]( https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
 
@@ -63,7 +62,7 @@ ssh-add ~/.ssh/鑰匙🔑名稱
 （如果有多個專案與ssh key 配對會有切換問題，所以要有下面設定）  
 ###### 以下範例  
 
-到.ssh/新增 config檔  
+到.ssh/新增 config檔：＄vim config  
 `Host 專案名稱.github.com`  
 `HostName github.com`  
 `User git`  
@@ -73,6 +72,10 @@ ssh-add ~/.ssh/鑰匙🔑名稱
 `[remote "origin"]`  
 `url = git@專案名稱.github.com:BeeeNOW/專案名稱.git`
 
+#### 測試配對是否正確  
+＄ssh -T Sudo-user-create.github.com  
+如果成功會顯示  
+`Hi BeeeNOW/Sudo-user-create! You've successfully authenticated, but GitHub does not provide shell access.`
 
 ## 使用步驟
 ###### //進到公用帳號
